@@ -1,0 +1,149 @@
+body {
+    background-color: #008e8e;
+}
+h1, h2, h3 {
+    font-size: 1.4em;
+    font-family: 'PT Sans Narrow';
+    background-color: #613e2e;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h2 {
+    font-weight: normal;
+}
+nav {
+    background-color: #333;
+    color: white;
+
+    font-size: 1.6em;
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    font-family: 'PT Sans Narrow';
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 15px 30px;
+}
+nav a:hover {
+    background-color: #937b6d;
+}
+section img {
+    border-radius: 10px;
+}
+header img {
+    display: block;
+    margin: 0 auto;
+}
+nav { 
+    background-color: #613e2e;
+}
+main {
+    display: flex;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+section {
+    max-width: 70%;
+    padding: 5px;
+    margin: 5px ;
+    color: white;
+}
+aside  {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    background-color: #333;
+    color: white;
+    font-family: 'PT Sans Narrow';
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    color: black;
+}
+aside p {
+    text-align: justify;
+    line-height: 2;
+}
+aside h2 {
+    width: 100%;
+}
+
+/* Images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    section {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+    
+    aside {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+    
+    nav a {
+        padding: 10px 15px;
+        font-size: 1.2em;
+    }
+    
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    nav {
+        font-size: 1.2em;
+    }
+    
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    
+    h1, h2, h3 {
+        font-size: 1em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    
+    section {
+        padding: 0;
+        margin: 0;
+    }
+    
+    aside {
+        padding: 5px;
+        margin: 10px 0;
+        font-size: 0.9em;
+    }
+}
